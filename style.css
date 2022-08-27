@@ -1,0 +1,213 @@
+@font-face {
+  font-family: "Arial-MT";
+  src: url("../assets/fonts/Arial-MT.woff");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 1440px;
+  min-height: 100vh;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  background: url("../assets/home.jpeg") center/cover;
+}
+
+h1 {
+  padding-top: 25px;
+  color: #fff;
+  font-size: 32px;
+}
+
+.horror-wrapper {
+  display: grid;
+  grid-template-rows: 300px;
+  column-gap: 0px;
+  grid-template-columns: 25% 25% 25% 25%;
+  justify-items: center;
+  align-items: center;
+}
+
+.horror-grid1 {
+  padding-top: 10px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.horror-grid2 {
+  padding-top: 10px;
+
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.horror-grid3 {
+  padding-top: 10px;
+
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.horror-grid4 {
+  padding-top: 10px;
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+
+.border {
+  border-style: solid;
+  border-width: 5px;
+  border-color: red;
+}
+
+.horror-image {
+  border-radius: 10%;
+}
+
+/*.horror-image:hover,
+.horror-image:focus,*/
+.horror-card:hover,
+.horror-card:focus {
+  opacity: 0.75;
+  color: #0d606f;
+  cursor: pointer;
+}
+
+.shuffle-wrapper {
+  display: flex;
+  max-width: 100%;
+  flex-direction: row;
+  margin-top: 80px;
+  /*margin-left: 50px;*/
+  justify-content: space-around;
+}
+
+.levels-of-difficulty {
+  margin: 0px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  font-size: 32px;
+}
+
+.difficulty {
+  margin-bottom: 20px;
+  border-style: double;
+  border: 3px;
+  border-color: red;
+}
+.difficulty:last-child {
+  margin-bottom: 0px;
+  margin-top: 50px;
+}
+
+.difficulty:active {
+  border: 5px;
+  border-color: red;
+  background-color: red;
+}
+
+button {
+  font-size: 32px;
+  color: #fff;
+  background-color: blue;
+  border-color: blue;
+  border-radius: 10%;
+}
+
+button:hover,
+button:focus {
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+button:active {
+  border: 5px;
+  border-color: red;
+  background-color: red;
+}
+
+.cards-wrapper {
+  margin: 50px 0px 0px 0px;
+  width: 550px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.shuffle-cards {
+  border-radius: 10%;
+}
+.traker {
+  margin: 60px 0px 0px 0px;
+}
+.shuffle-cards:hover,
+.shuffle-cards:focus {
+  cursor: pointer;
+}
+
+.shuffle-cards:active {
+  border: 10px;
+  border-color: red;
+}
+
+.traker {
+  width: 300px;
+  margin-left: 0px;
+  margin-top: 0px;
+}
+
+.green {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 70px;
+  width: 70px;
+  background-color: green;
+  border-radius: 50%;
+}
+
+.yellow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 70px;
+  width: 70px;
+  background-color: yellow;
+  border-radius: 50%;
+}
+
+.blue {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 70px;
+  width: 70px;
+  background-color: blue;
+  border-radius: 50%;
+}
+
+.circles-wrapper {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.stage {
+  font-size: 24px;
+}
+
+.numbers-of-traker {
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
+}
